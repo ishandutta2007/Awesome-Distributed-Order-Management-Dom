@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Distributed-Order-Management-Dom"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Distributed-Order-Management-Dom?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Distributed-Order-Management-Dom"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Distributed-Order-Management-Dom?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Distributed-Order-Management-Dom/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Distributed-Order-Management-Dom?style=social" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Distributed-Order-Management-Dom/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Distributed-Order-Management-Dom"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome" /></a>
@@ -72,34 +72,34 @@ Open-source distributed order management frameworks, event-driven Saga pattern i
 
 ### 🌟 Featured DOM & Orchestration Repositories
 
-1. **[ASP.NET Core Inventory & Order Management System](https://github.com/go2ismail/Asp.Net-Core-Inventory-Order-Management-System)** [![GitHub stars](https://img.shields.io/github/stars/go2ismail/Asp.Net-Core-Inventory-Order-Management-System?style=social&color=white)](https://github.com/go2ismail/Asp.Net-Core-Inventory-Order-Management-System/stargazers)  
+1. **[ASP.NET Core Inventory & Order Management System](https://github.com/go2ismail/Asp.Net-Core-Inventory-Order-Management-System)** [![GitHub_Stars](https://img.shields.io/github/stars/go2ismail/Asp.Net-Core-Inventory-Order-Management-System?style=social&color=white)](https://github.com/go2ismail/Asp.Net-Core-Inventory-Order-Management-System/stargazers)  
    Enterprise-grade headless inventory, warehouse, and order management system built on .NET 9 and Vue.js. Follows Clean Architecture, CQRS, MediatR, and SQL Server for high-performance order routing and inventory tracking.
 
-2. **[Craftplan](https://github.com/puemos/craftplan)** [![GitHub stars](https://img.shields.io/github/stars/puemos/craftplan?style=social&color=white)](https://github.com/puemos/craftplan/stargazers)  
+2. **[Craftplan](https://github.com/puemos/craftplan)** [![GitHub_Stars](https://img.shields.io/github/stars/puemos/craftplan?style=social&color=white)](https://github.com/puemos/craftplan/stargazers)  
    Self-hosted ERP and distributed order orchestration platform for made-to-order manufacturing and small-batch logistics. Features calendar-based order management, automated recipe optimization, and Docker Compose deployment.
 
-3. **[OpenOMS](https://github.com/openoms-org/openoms)** [![GitHub stars](https://img.shields.io/github/stars/openoms-org/openoms?style=social&color=white)](https://github.com/openoms-org/openoms/stargazers)  
+3. **[OpenOMS](https://github.com/openoms-org/openoms)** [![GitHub_Stars](https://img.shields.io/github/stars/openoms-org/openoms?style=social&color=white)](https://github.com/openoms-org/openoms/stargazers)  
    Modern open-source Order Management System for e-commerce. Built with a Go backend and Next.js frontend, featuring 460+ API endpoints, 21 background processing workers, 27 SDK packages, Docker/Helm orchestration, and Prometheus telemetry.
 
-4. **[Inventoros](https://github.com/Inventoros/Inventoros)** [![GitHub stars](https://img.shields.io/github/stars/Inventoros/Inventoros?style=social&color=white)](https://github.com/Inventoros/Inventoros/stargazers)  
+4. **[Inventoros](https://github.com/Inventoros/Inventoros)** [![GitHub_Stars](https://img.shields.io/github/stars/Inventoros/Inventoros?style=social&color=white)](https://github.com/Inventoros/Inventoros/stargazers)  
    Open-source modular inventory, shipment, and order fulfillment platform. Built with PHP and Laravel, providing approval workflows, refund management, batch tracking, multi-warehouse adjustments, and Sanctum token API auth.
 
-5. **[Zentra Distributed OMS](https://github.com/print-ramcharan/distributed-oms)** [![GitHub stars](https://img.shields.io/github/stars/print-ramcharan/distributed-oms?style=social&color=white)](https://github.com/print-ramcharan/distributed-oms/stargazers)  
+5. **[Zentra Distributed OMS](https://github.com/print-ramcharan/distributed-oms)** [![GitHub_Stars](https://img.shields.io/github/stars/print-ramcharan/distributed-oms?style=social&color=white)](https://github.com/print-ramcharan/distributed-oms/stargazers)  
    Production-grade, event-driven microservices ecosystem demonstrating the **Saga Orchestration Pattern**. Built with Spring Boot 4.0, Apache Kafka, PostgreSQL, and Redis. Features a real-time Control Center for monitoring distributed transaction lifecycles, Kafka event streams, automated retries, Dead Letter Queues (DLQ), and compensating transactions.
 
-6. **[Distributed Order Management Platform (.NET)](https://github.com/kkap15/DistributedOrderManagementPlatform)** [![GitHub stars](https://img.shields.io/github/stars/kkap15/DistributedOrderManagementPlatform?style=social&color=white)](https://github.com/kkap15/DistributedOrderManagementPlatform/stargazers)  
+6. **[Distributed Order Management Platform (.NET)](https://github.com/kkap15/DistributedOrderManagementPlatform)** [![GitHub_Stars](https://img.shields.io/github/stars/kkap15/DistributedOrderManagementPlatform?style=social&color=white)](https://github.com/kkap15/DistributedOrderManagementPlatform/stargazers)  
    Full-stack distributed order management platform built with ASP.NET Core Web API, RabbitMQ/Kafka message bus, and event-driven microservices orchestrating inventory validation, payment processing, and fulfillment dispatch.
 
-7. **[Distributed Commerce API](https://github.com/paulopacifico/distributed-commerce-api)** [![GitHub stars](https://img.shields.io/github/stars/paulopacifico/distributed-commerce-api?style=social&color=white)](https://github.com/paulopacifico/distributed-commerce-api/stargazers)  
+7. **[Distributed Commerce API](https://github.com/paulopacifico/distributed-commerce-api)** [![GitHub_Stars](https://img.shields.io/github/stars/paulopacifico/distributed-commerce-api?style=social&color=white)](https://github.com/paulopacifico/distributed-commerce-api/stargazers)  
    Event-driven OMS demonstrating the **Choreography Saga Pattern** and distributed tracing. Built with Java 21, Kotlin, Spring Boot, and Apache Kafka. Features order, inventory, payment, and shipment services communicating across 9 Kafka topics with automated compensation workflows.
 
-8. **[Distributed Order Management System (AbhashK1)](https://github.com/AbhashK1/Distributed-Order-Management-System)** [![GitHub stars](https://img.shields.io/github/stars/AbhashK1/Distributed-Order-Management-System?style=social&color=white)](https://github.com/AbhashK1/Distributed-Order-Management-System/stargazers)  
+8. **[Distributed Order Management System (AbhashK1)](https://github.com/AbhashK1/Distributed-Order-Management-System)** [![GitHub_Stars](https://img.shields.io/github/stars/AbhashK1/Distributed-Order-Management-System?style=social&color=white)](https://github.com/AbhashK1/Distributed-Order-Management-System/stargazers)  
    Event-driven microservices architecture built with Spring Boot, Apache Kafka, Redis, and PostgreSQL. Features Redis atomic inventory locks, payment microservice, notification dispatch, and a Streamlit UI for visualizing distributed transaction flows.
 
-9. **[Distributed Order System (Saga Pattern)](https://github.com/alonsoir/distributed-order-system)** [![GitHub stars](https://img.shields.io/github/stars/alonsoir/distributed-order-system?style=social&color=white)](https://github.com/alonsoir/distributed-order-system/stargazers)  
+9. **[Distributed Order System (Saga Pattern)](https://github.com/alonsoir/distributed-order-system)** [![GitHub_Stars](https://img.shields.io/github/stars/alonsoir/distributed-order-system?style=social&color=white)](https://github.com/alonsoir/distributed-order-system/stargazers)  
    Reactive distributed order system in Java (Spring WebFlux, R2DBC, Redis, MySQL). Employs the Saga Pattern to provide resilient distributed transaction guarantees across multi-warehouse order workflows.
 
-10. **[OpenB2B](https://github.com/deveasyclick/openb2b)** [![GitHub stars](https://img.shields.io/github/stars/deveasyclick/openb2b?style=social&color=white)](https://github.com/deveasyclick/openb2b/stargazers)  
+10. **[OpenB2B](https://github.com/deveasyclick/openb2b)** [![GitHub_Stars](https://img.shields.io/github/stars/deveasyclick/openb2b?style=social&color=white)](https://github.com/deveasyclick/openb2b/stargazers)  
     Open-source, multi-tenant ordering and invoicing platform for wholesalers and distributors. Features Go (Chi) backend, React dashboard, relational order tracking, SKU inventory sync, and role-based access control.
 
 11. **[Hyperrr](https://pkg.go.dev/github.com/GoHyperrr/hyperrr)**  
@@ -115,8 +115,8 @@ Open-source distributed order management frameworks, event-driven Saga pattern i
 
 ### 📦 Complementary WMS & Logistics Engines
 
-- **[OpenBoxes](https://github.com/openboxes/openboxes)** [![GitHub stars](https://img.shields.io/github/stars/openboxes/openboxes?style=social&color=white)](https://github.com/openboxes/openboxes/stargazers) — Comprehensive open-source supply chain and inventory management platform (EPL-1.0) with stock routing, electronic purchase orders, and shipment tracking.
-- **[Warehauser](https://github.com/warehauser/warehauser)** [![GitHub stars](https://img.shields.io/github/stars/warehauser/warehauser?style=social&color=white)](https://github.com/warehauser/warehauser/stargazers) — Open-source warehouse management and inventory backend (Apache-2.0) built on Python and Django.
+- **[OpenBoxes](https://github.com/openboxes/openboxes)** [![GitHub_Stars](https://img.shields.io/github/stars/openboxes/openboxes?style=social&color=white)](https://github.com/openboxes/openboxes/stargazers) — Comprehensive open-source supply chain and inventory management platform (EPL-1.0) with stock routing, electronic purchase orders, and shipment tracking.
+- **[Warehauser](https://github.com/warehauser/warehauser)** [![GitHub_Stars](https://img.shields.io/github/stars/warehauser/warehauser?style=social&color=white)](https://github.com/warehauser/warehauser/stargazers) — Open-source warehouse management and inventory backend (Apache-2.0) built on Python and Django.
 - **[myWMS](https://www.iml.fraunhofer.de/en/fields_of_activity/material-flow-systems/software_engineering/research1/mywms-open-source-warehouse-management-system.html)** — Professional open-source warehouse management framework developed by Fraunhofer IML for industrial material flow and fulfillment routing.
 
 > 💡 **Architectural Recipe for Custom DOM**: Combine an event-driven saga orchestrator like **Zentra** or **Distributed Commerce API** with **OrderRoute** for spatial routing, **OpenOMS** for administrative dashboards, and a robust persistence layer (**PostgreSQL + Redis + Kafka**) to build a resilient, self-hosted enterprise DOM architecture.
