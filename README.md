@@ -42,67 +42,18 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## SaaS/Hosted Platforms
 
-
-
-- **[Salesforce Order Management](https://www.salesforce.com/)**  
-
-  Native Salesforce DOM solution for B2C and B2B commerce. Features order capture, orchestration, fulfillment, and inventory visibility integrated with Commerce Cloud and Service Cloud.
-
-
-
-- **[Manhattan Associates Omni](https://www.manh.com/)**  
-
-  Enterprise omnichannel order management platform. Features distributed order management, store fulfillment, and inventory optimization for complex retail operations.
-
-
-
-- **[Fluent Commerce](https://fluentcommerce.com/)**  
-
-  Cloud-native distributed order management platform. Features real-time inventory visibility, intelligent order routing, and fulfillment orchestration across stores, warehouses, and dropship partners.
-
-
-
-- **[IBM Sterling Order Management](https://www.ibm.com/)**  
-
-  Enterprise DOM platform for omnichannel fulfillment. Features order orchestration, inventory sourcing, and returns management at scale.
-
-
-
-- **[Blue Yonder OMS](https://blueyonder.com/)**  
-
-  AI-powered order management solution. Features distributed order orchestration, inventory optimization, and fulfillment execution integrated with supply chain planning.
-
-
-
-- **[Kibo Order Management](https://kibocommerce.com/)**  
-
-  Composable commerce platform with DOM capabilities. Features order orchestration, inventory visibility, and fulfillment optimization.
-
-
-
-- **[OneStock](https://www.onestock-retail.com/)**  
-
-  Distributed order management platform for retail. Features ship-from-store, click-and-collect, and intelligent order routing to optimize inventory usage.
-
-
-
-- **[Radial OMS](https://www.radial.com/)**  
-
-  Omnichannel order management solution. Features enterprise-grade order orchestration, inventory management, and fulfillment for retail and B2B.
-
-
-
-- **[Deck Commerce](https://www.deckcommerce.com/)**  
-
-  Order management system designed for direct-to-consumer brands. Features order orchestration, inventory management, and customer service tools.
-
-
-
-- **[Deposco OMS](https://www.deposco.com/)**  
-
-  Unified commerce platform with DOM capabilities. Features order orchestration, warehouse management, and fulfillment automation.
-
-
+| Platform | Company Size (Revenue / Valuation) | Description | Pricing / Free Tier |
+| :--- | :--- | :--- | :--- |
+| **[Salesforce Order Management](https://www.salesforce.com/)** | ~$215B Market Cap / ~$41.5B Revenue | Native Salesforce DOM solution for B2C and B2B commerce. Features order capture, orchestration, fulfillment, and inventory visibility integrated with Commerce Cloud and Service Cloud. | Custom enterprise pricing (typically % of GMV or per-order fee). No free tier. |
+| **[IBM Sterling Order Management](https://www.ibm.com/)** | ~$210B Market Cap / ~$62B Revenue | Enterprise DOM platform for omnichannel fulfillment. Features order orchestration, inventory sourcing, and returns management at scale. | Custom quote / enterprise licensing. No free tier. |
+| **[Manhattan Associates Omni](https://www.manh.com/)** | ~$12B Market Cap / ~$1.13B Revenue | Enterprise omnichannel order management platform. Features distributed order management, store fulfillment, and inventory optimization for complex retail operations. | Custom quote / enterprise tier. No free tier. |
+| **[Blue Yonder OMS](https://blueyonder.com/)** | ~$1.4B Revenue (Panasonic Subsidiary) | AI-powered order management solution. Features distributed order orchestration, inventory optimization, and fulfillment execution integrated with supply chain planning. | Custom enterprise pricing. No free tier. |
+| **[Radial OMS](https://www.radial.com/)** | ~$1B Revenue ($820M Acquisition by bpost) | Omnichannel order management solution. Features enterprise-grade order orchestration, inventory management, and fulfillment for retail and B2B. | Custom quote / enterprise contracts. No free tier. |
+| **[Kibo Order Management](https://kibocommerce.com/)** | ~$70M Revenue (Vista Equity Partners) | Composable commerce platform with DOM capabilities. Features order orchestration, inventory visibility, and fulfillment optimization. | Custom enterprise subscription. No free tier. |
+| **[Deposco OMS](https://www.deposco.com/)** | ~$35M–$40M ARR / ~$35M+ Funding | Unified commerce platform with DOM capabilities. Features order orchestration, warehouse management, and fulfillment automation. | Custom quote / annual subscription. No free tier. |
+| **[Fluent Commerce](https://fluentcommerce.com/)** | ~$25M–$30M Revenue / $46M+ Funding | Cloud-native distributed order management platform. Features real-time inventory visibility, intelligent order routing, and fulfillment orchestration across stores, warehouses, and dropship partners. | Custom enterprise pricing. No free tier. |
+| **[OneStock](https://www.onestock-retail.com/)** | ~$26M ARR / $72M Growth Investment | Distributed order management platform for retail. Features ship-from-store, click-and-collect, and intelligent order routing to optimize inventory usage. | Custom quote based on order volume. No free tier. |
+| **[Deck Commerce](https://www.deckcommerce.com/)** | ~$5M Revenue / ~$12.5M Funding | Order management system designed for direct-to-consumer brands. Features order orchestration, inventory management, and customer service tools. | Custom annual software subscription. No free tier. |
 
 ## Open-Source GitHub Projects
 
