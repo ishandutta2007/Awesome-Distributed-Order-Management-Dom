@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340">
   <defs>
-    <!-- Gradients -->
+    <!-- Background Gradients -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0a0f1d"/>
-      <stop offset="50%" stop-color="#0d1527"/>
-      <stop offset="100%" stop-color="#111c38"/>
+      <stop offset="0%" stop-color="#090d1a"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#131d36"/>
     </linearGradient>
 
     <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -13,51 +13,36 @@
       <stop offset="100%" stop-color="#c084fc"/>
     </linearGradient>
 
-    <linearGradient id="pulseCyan" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.2"/>
-    </linearGradient>
-
     <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85"/>
-      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.85"/>
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9"/>
     </linearGradient>
 
-    <!-- Filters for Glow -->
+    <!-- Glow Filter using robust feMerge -->
     <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="6" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
   </defs>
 
   <style>
-    @keyframes pulseRing {
-      0% { r: 12px; opacity: 0.8; }
-      50% { r: 24px; opacity: 0.15; }
-      100% { r: 12px; opacity: 0.8; }
-    }
     @keyframes dashMove {
-      to { stroke-dashoffset: -40; }
+      to { stroke-dashoffset: -48; }
     }
-    @keyframes floatCard1 {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-7px); }
+    @keyframes dashMoveRev {
+      to { stroke-dashoffset: 48; }
     }
-    @keyframes floatCard2 {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(7px); }
+    .stream-line {
+      stroke-dasharray: 8 6;
+      animation: dashMove 2.5s linear infinite;
     }
-    @keyframes particleDrift {
-      0% { transform: translateX(0px); opacity: 0.2; }
-      50% { opacity: 0.7; }
-      100% { transform: translateX(60px); opacity: 0.2; }
+    .stream-line-rev {
+      stroke-dasharray: 8 6;
+      animation: dashMoveRev 3s linear infinite;
     }
-    .node-pulse { animation: pulseRing 3.5s infinite ease-in-out; }
-    .stream-line { stroke-dasharray: 6 6; animation: dashMove 2.5s linear infinite; }
-    .stream-line-reverse { stroke-dasharray: 6 6; animation: dashMove 3s linear infinite reverse; }
-    .card-float-1 { animation: floatCard1 5s ease-in-out infinite; }
-    .card-float-2 { animation: floatCard2 6s ease-in-out infinite; }
-    .drift-p { animation: particleDrift 8s ease-in-out infinite alternate; }
   </style>
 
   <!-- Background Base -->
@@ -82,52 +67,75 @@
   <!-- Ambient Dynamic Networking & Order Routing Paths (Background) -->
   <g>
     <!-- Background Flow Path 1 -->
-    <path d="M 80 170 Q 220 50, 400 130 T 750 90 T 1120 170" fill="none" stroke="#6366f1" stroke-width="2.5" opacity="0.35"/>
-    <path d="M 80 170 Q 220 50, 400 130 T 750 90 T 1120 170" fill="none" stroke="#38bdf8" stroke-width="2.5" class="stream-line" opacity="0.75"/>
+    <path d="M 80 170 Q 240 50, 420 130 T 780 90 T 1120 170" fill="none" stroke="#6366f1" stroke-width="2.5" opacity="0.35"/>
+    <path d="M 80 170 Q 240 50, 420 130 T 780 90 T 1120 170" fill="none" stroke="#38bdf8" stroke-width="2.5" class="stream-line" opacity="0.75">
+      <animate attributeName="stroke-dashoffset" from="0" to="-48" dur="2.5s" repeatCount="indefinite"/>
+    </path>
 
     <!-- Background Flow Path 2 -->
-    <path d="M 120 270 Q 350 320, 600 230 T 1080 260" fill="none" stroke="#a855f7" stroke-width="2" opacity="0.3"/>
-    <path d="M 120 270 Q 350 320, 600 230 T 1080 260" fill="none" stroke="#c084fc" stroke-width="2" class="stream-line-reverse" opacity="0.6"/>
+    <path d="M 120 270 Q 360 320, 600 230 T 1080 260" fill="none" stroke="#a855f7" stroke-width="2" opacity="0.3"/>
+    <path d="M 120 270 Q 360 320, 600 230 T 1080 260" fill="none" stroke="#c084fc" stroke-width="2" class="stream-line-rev" opacity="0.6">
+      <animate attributeName="stroke-dashoffset" from="0" to="48" dur="3s" repeatCount="indefinite"/>
+    </path>
 
-    <!-- Dynamic Pulsing Nodes -->
-    <circle cx="80" cy="170" r="14" fill="none" stroke="#38bdf8" class="node-pulse"/>
-    <circle cx="80" cy="170" r="6" fill="#38bdf8"/>
+    <!-- Dynamic Pulsing Nodes (SMIL for universal SVG support) -->
+    <g transform="translate(80, 170)">
+      <circle r="14" fill="none" stroke="#38bdf8" stroke-width="1.5">
+        <animate attributeName="r" values="8;20;8" dur="3.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.8;0.1;0.8" dur="3.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="6" fill="#38bdf8"/>
+    </g>
 
-    <circle cx="1120" cy="170" r="14" fill="none" stroke="#a855f7" class="node-pulse" style="animation-delay: 1.2s;"/>
-    <circle cx="1120" cy="170" r="6" fill="#a855f7"/>
+    <g transform="translate(1120, 170)">
+      <circle r="14" fill="none" stroke="#a855f7" stroke-width="1.5">
+        <animate attributeName="r" values="8;20;8" begin="1s" dur="3.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.8;0.1;0.8" begin="1s" dur="3.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="6" fill="#a855f7"/>
+    </g>
 
-    <circle cx="600" cy="230" r="12" fill="none" stroke="#34d399" class="node-pulse" style="animation-delay: 0.6s;"/>
-    <circle cx="600" cy="230" r="5" fill="#34d399"/>
+    <g transform="translate(600, 230)">
+      <circle r="12" fill="none" stroke="#34d399" stroke-width="1.5">
+        <animate attributeName="r" values="6;16;6" begin="0.5s" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.8;0.1;0.8" begin="0.5s" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="5" fill="#34d399"/>
+    </g>
   </g>
 
-  <!-- Floating Dynamic Decorative Pills / Cards (Positioned symmetrically away from center title) -->
-  <!-- Left Dynamic Card -->
-  <g class="card-float-1" transform="translate(60, 40)">
-    <rect width="180" height="52" rx="10" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1.2" opacity="0.9" filter="url(#glow)"/>
+  <!-- Floating Dynamic Decorative Cards (Using SMIL animateTransform) -->
+  <!-- Left Upper Dynamic Card -->
+  <g filter="url(#glow)">
+    <animateTransform attributeName="transform" type="translate" values="60,40; 60,33; 60,40" dur="5s" repeatCount="indefinite"/>
+    <rect width="180" height="52" rx="10" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1.2" opacity="0.95"/>
     <circle cx="24" cy="26" r="6" fill="#38bdf8"/>
     <text x="38" y="24" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">ORCHESTRATION</text>
     <text x="38" y="39" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700">Real-Time Sagas</text>
   </g>
 
   <!-- Left Lower Dynamic Card -->
-  <g class="card-float-2" transform="translate(50, 230)">
-    <rect width="190" height="52" rx="10" fill="url(#cardGrad)" stroke="#34d399" stroke-width="1.2" opacity="0.9" filter="url(#glow)"/>
+  <g filter="url(#glow)">
+    <animateTransform attributeName="transform" type="translate" values="50,230; 50,237; 50,230" dur="6s" repeatCount="indefinite"/>
+    <rect width="190" height="52" rx="10" fill="url(#cardGrad)" stroke="#34d399" stroke-width="1.2" opacity="0.95"/>
     <circle cx="24" cy="26" r="6" fill="#34d399"/>
     <text x="38" y="24" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">INVENTORY ROUTING</text>
     <text x="38" y="39" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700">Multi-Node Fulfillment</text>
   </g>
 
-  <!-- Right Dynamic Card -->
-  <g class="card-float-2" transform="translate(950, 40)">
-    <rect width="190" height="52" rx="10" fill="url(#cardGrad)" stroke="#818cf8" stroke-width="1.2" opacity="0.9" filter="url(#glow)"/>
+  <!-- Right Upper Dynamic Card -->
+  <g filter="url(#glow)">
+    <animateTransform attributeName="transform" type="translate" values="950,40; 950,47; 950,40" dur="6s" repeatCount="indefinite"/>
+    <rect width="190" height="52" rx="10" fill="url(#cardGrad)" stroke="#818cf8" stroke-width="1.2" opacity="0.95"/>
     <circle cx="24" cy="26" r="6" fill="#818cf8"/>
     <text x="38" y="24" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">OMNICHANNEL DOM</text>
     <text x="38" y="39" fill="#818cf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700">BOPIS / Ship-From-Store</text>
   </g>
 
   <!-- Right Lower Dynamic Card -->
-  <g class="card-float-1" transform="translate(960, 230)">
-    <rect width="180" height="52" rx="10" fill="url(#cardGrad)" stroke="#c084fc" stroke-width="1.2" opacity="0.9" filter="url(#glow)"/>
+  <g filter="url(#glow)">
+    <animateTransform attributeName="transform" type="translate" values="960,230; 960,223; 960,230" dur="5s" repeatCount="indefinite"/>
+    <rect width="180" height="52" rx="10" fill="url(#cardGrad)" stroke="#c084fc" stroke-width="1.2" opacity="0.95"/>
     <circle cx="24" cy="26" r="6" fill="#c084fc"/>
     <text x="38" y="24" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">ECOSYSTEM</text>
     <text x="38" y="39" fill="#c084fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700">SaaS &amp; Open Source</text>
@@ -146,19 +154,19 @@
 
     <!-- Subtitle -->
     <text x="600" y="184" fill="#f1f5f9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="500">
-      Order Orchestration &bull; Inventory Routing &bull; Omnichannel Fulfillment
+      Order Orchestration &#8226; Inventory Routing &#8226; Omnichannel Fulfillment
     </text>
 
     <!-- Feature Highlights / Tags -->
     <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">
       <rect x="365" y="218" width="130" height="28" rx="14" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
-      <text x="430" y="237" fill="#38bdf8">&bull; Event-Driven</text>
+      <text x="430" y="237" fill="#38bdf8">&#8226; Event-Driven</text>
 
       <rect x="510" y="218" width="180" height="28" rx="14" fill="#0f172a" stroke="#818cf8" stroke-width="1"/>
-      <text x="600" y="237" fill="#818cf8">&bull; Saga Orchestration</text>
+      <text x="600" y="237" fill="#818cf8">&#8226; Saga Orchestration</text>
 
       <rect x="705" y="218" width="130" height="28" rx="14" fill="#0f172a" stroke="#34d399" stroke-width="1"/>
-      <text x="770" y="237" fill="#34d399">&bull; Multi-Cloud</text>
+      <text x="770" y="237" fill="#34d399">&#8226; Multi-Cloud</text>
     </g>
   </g>
 </svg>
